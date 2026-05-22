@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import Cocktails from "./components/Cocktails.jsx";
 import { ReactLenis } from 'lenis/react';
 
 import 'lenis/dist/lenis.css';
@@ -26,7 +27,6 @@ const App = () => {
         return () => {
             const lenisInstance = lenisRef.current?.lenis;
             if (lenisInstance) {
-                // Clean up events on unmount
                 lenisInstance.off('scroll', ScrollTrigger.update);
             }
         };
@@ -46,7 +46,7 @@ const App = () => {
         <main>
         <Navbar/>
         <Hero/>
-        <div className="h-dvh bg-black"></div>
+        <Cocktails/>
     </main>
         </ReactLenis>
     )
