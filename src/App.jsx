@@ -9,6 +9,7 @@ import 'lenis/dist/lenis.css';
 import {useEffect, useRef} from "react";
 import About from "./components/About.jsx";
 import Art from "./components/Art.jsx";
+import Menu from "./components/Menu.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -51,6 +52,7 @@ const App = () => {
         <Cocktails/>
         <About/>
         <Art/>
+        <Menu/>
 
     </main>
         </ReactLenis>
