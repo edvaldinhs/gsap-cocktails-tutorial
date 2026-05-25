@@ -10,6 +10,7 @@ import {useEffect, useRef} from "react";
 import About from "./components/About.jsx";
 import Art from "./components/Art.jsx";
 import Menu from "./components/Menu.jsx";
+import Contact from "./components/Contact.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -53,7 +54,7 @@ const App = () => {
         <About/>
         <Art/>
         <Menu/>
-
+        <Contact/>
     </main>
         </ReactLenis>
     )
